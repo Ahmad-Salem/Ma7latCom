@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">محلات كوم</string>
+    <string name="splash_text1">نختصر عليك الوقت</string>
+    <string name="splash_text2">جميع الحقوق محفوظة 2020</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">التالي</string>
+    <string name="back">السابق</string>
+    <string name="title1_startup_screen">محلاتي</string>
+    <string name="body1_startup_screen">نسهل عليك عملية شراء ماتريد بأرخص الأسعار و أقرب الأماكن .. نساعدك علي التسوق بدون عناء ونساعدك للوصول إلي المحل الذي تريده مباشرة</string>
+
+    <string name="title2_startup_screen">محلاتي</string>
+    <string name="body2_startup_screen">نسهل عليك عملية الأعلان بطريقة فعالة للمحل الخاص بك وعملية تسويق وبيع منتجاتك والأعلان لمحلك وإضافة عروض بداخله </string>
+
+    <string name="title3_startup_screen">محلاتي</string>
+    <string name="body3_startup_screen">برجاء إدخال مدينتك و المحافظة للحصول علي نتائج أفضل عند البحث عن محل معين حيث انه يمكن تغيره في وقت لاحق اذا أردت</string>
+
+
+    <!-- defualt text -->
+    <string name="default_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+
+
+    <string name="permission_dialog">Accessing Location Permissions required</string>
+    <string name="go_to_permissions_settings">Go to App settings and enable permissions</string>
+    <string name="re_send_link"><u>إعادة إرسال كود التفعيل</u></string>
+    <string name="new_user"><u>مستخدم جديد</u></string>
+    <string name="forgot_password"><u>نسيت كلمة المرور؟</u></string>
+    <string name="title_activity_maps">Map</string>
+</resources>

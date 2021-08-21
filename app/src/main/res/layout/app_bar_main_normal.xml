@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_gradient_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/wedding_activity_toolbar"
+
+            design:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:title=" "
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl" >
+            <!--<TextView-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="محلاتي"-->
+                <!--android:textColor="@color/white"-->
+                <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"-->
+                <!--android:layout_gravity="center" />-->
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/search_bar_container">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingRight="30dp"
+                android:inputType="text"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:id="@+id/search_bar_value"
+                android:textColor="@color/dark_black"
+                android:textSize="10sp"
+                android:hint="أبحث عن محلات ومنتجات وعروض مدينتك ..."
+                android:textColorHint="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+
+                android:background="@drawable/search_bar_layout"/>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@+id/search_bar_value"
+                android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_marginLeft="-35dp"
+                android:id="@+id/back_search_icon"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"/>
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@+id/search_bar_value"
+                android:background="@drawable/search_icon_main"
+                android:layout_marginLeft="-35dp"
+                android:visibility="visible"
+                android:id="@+id/right_search_icon"
+                android:layout_marginTop="8dp"/>
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/search_bar_value"
+                android:background="@drawable/search_icon_main"
+                android:layout_marginRight="-40dp"
+                android:id="@+id/left_search_icon"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+        android:id="@+id/layout_search_result"
+        android:background="@color/white"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/search_recyclerView"
+            android:layout_margin="5dp"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"/>
+    </RelativeLayout>
+
+    <include layout="@layout/content_main_normal"  android:id="@+id/layout_main"/>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

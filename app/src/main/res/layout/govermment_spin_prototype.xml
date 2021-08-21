@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_gov"
+    android:paddingLeft="25dp"
+    android:paddingRight="10dp"
+    android:text="choose government"
+    android:textColor="@color/white"/>

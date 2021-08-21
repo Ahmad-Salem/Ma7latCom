@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:background="@drawable/pattern_of_icon"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+xmlns:design="http://schemas.android.com/apk/res-auto"
+android:layoutDirection="rtl" android:textDirection="rtl"
+android:layout_height="match_parent"
+tools:context="com.example.ahmad_elbayadi.ma7laty.activities.guide_screen">
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/more_info_toolbar"
+    android:background="@drawable/splash_gradient_bg"
+    design:titleTextColor="@color/colorPrimary"
+    app:title=" "
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+    <TextView
+        android:id="@+id/toolbar_title_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إرشادات"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_gravity="center" />
+
+</androidx.appcompat.widget.Toolbar>
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="88dp"
+    android:id="@+id/info_info"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_card_view">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/icon_info"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خدمة العملاء"
+            android:id="@+id/heading_info"
+            android:layout_below="@+id/icon_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إذا كنت تريد إضافة المحل الخاص بك تسجيل الدخول او إنشاء حساب جديد وتسجيل الدخول به."
+            android:id="@+id/body_info"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/heading_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="8sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_title_info"
+            android:text="أرقام خدمة العملاء:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/body_info"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/phone_title_info"
+            android:id="@+id/phone1_container_info">
+
+
+
+            <Button
+                android:background="@drawable/customer_services_button_layout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dial_number1_info"
+                android:layout_width="220dp"
+                android:layout_marginRight="-2dp"
+                android:layout_height="20dp"
+                android:hint="01091887791"
+                android:inputType="numberDecimal"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/phone1_container_info"
+            android:id="@+id/phone1_container2_info">
+
+
+
+
+
+
+            <Button
+                android:background="@drawable/customer_services_button_layout"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dial_number2_info"
+                android:layout_width="220dp"
+                android:layout_marginRight="-2dp"
+                android:layout_height="20dp"
+                android:hint="0109181180"
+                android:inputType="numberDecimal"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/phone1_container2_info"
+            android:id="@+id/phone1_container3_info"
+            android:layout_marginBottom="20dp">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_cell_phone"/>
+            <Button
+                android:background="@drawable/login_edit_text"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dial_number3_info"
+                android:layout_width="250dp"
+                android:layout_marginRight="-8dp"
+                android:layout_height="30dp"
+                android:hint="01030442242"
+                android:paddingRight="15dp"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التالي"
+            android:textSize="12dp"
+            android:id="@+id/next_info"
+            android:layout_below="@+id/phone1_container3_info"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="السابق"
+            android:textSize="12dp"
+            android:id="@+id/pre_info"
+            android:layout_below="@+id/phone1_container3_info"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorAccent"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

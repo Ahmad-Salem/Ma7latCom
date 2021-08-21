@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/pop_up_dis_shop"
+    android:textDirection="rtl"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:textColor="@color/white"
+        android:id="@+id/close_btn_adv2"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_action_back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="adv name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name_adv"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name_shop"
+        android:layout_marginTop="40dp">
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/adv_image_zooming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:src="@drawable/photo_startup1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="adv name"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/description_adv"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_width="340dp"-->
+<!--    android:layoutDirection="rtl"-->
+<!--    android:id="@+id/pop_up_dis_shop"-->
+<!--    android:textDirection="rtl"-->
+<!--    android:layout_height="450dp"-->
+<!--    android:background="@drawable/transparent_dark"-->
+<!--    android:padding="10dp"-->
+<!--    android:layout_gravity="center">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="x"-->
+<!--        android:id="@+id/close_btn_advertisement"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="@drawable/circle_close_backgraound"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_marginTop="20dp">-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/advertisement_details_image_zooming"-->
+<!--            android:src="@drawable/photo_startup1"-->
+<!--            android:scaleType="fitXY"/>-->
+
+<!--    </RelativeLayout>-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/advertisement_info"-->
+<!--            android:layout_marginTop="15px">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="عنوان الاعلان"-->
+<!--                android:id="@+id/adver_title"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="15dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="تفاصيل الاعلان"-->
+<!--                android:id="@+id/adver_des"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_below="@+id/adver_title"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="12dp"-->
+<!--                />-->
+
+<!--        </RelativeLayout>-->
+<!--    </ScrollView>-->
+
+<!--</LinearLayout>-->

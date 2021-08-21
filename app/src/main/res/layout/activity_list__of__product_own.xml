@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern_of_icon"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.List_Of_Product_own">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/product_list_activity_toolbar22"
+        android:background="@drawable/splash_gradient_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        design:titleTextColor="@color/colorPrimary"
+        app:title=" "
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" >
+        <TextView
+            android:id="@+id/toolbar_title_product_list22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محلاتكوم"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/product_list_activity_toolbar22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle_products22">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_of_product_data_null_own"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:id="@+id/data_photo_list_of_product_own"
+            />
+        <TextView
+            android:layout_below="@+id/data_photo_list_of_product_own"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لايوجد منتجات معروضة داخل المحل"
+            android:id="@+id/data_text_list_of_shop_pro12_own"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="لايوجد بيانات لعرضها"-->
+        <!--android:id="@+id/data_text_list_of_shop_pro12_own"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:layout_centerHorizontal="true" />-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_of_shop_internet_connection_layout_pro12_own"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/internet_connection"
+            android:id="@+id/connection_photo_list_of_shop_pro12_own"
+            />
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لايوجد إتصال بالأنترنت"
+            android:id="@+id/connection_text_list_of_shop_pro12_own"
+            android:layout_below="@+id/connection_photo_list_of_shop_pro12_own"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حاول مرة أخري"
+            android:layout_marginTop="20dp"
+            android:id="@+id/retry_list_of_shop_pro12_own"
+            android:layout_below="@+id/connection_text_list_of_shop_pro12_own"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_product2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_queue_black_24dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

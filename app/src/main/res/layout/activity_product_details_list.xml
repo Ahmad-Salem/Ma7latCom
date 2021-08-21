@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern_of_icon"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.Product_details">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+  <!---->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:id="@+id/line_header"-->
+        <!--android:background="@color/dark_black"/>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/product_details_activity_toolbar114"
+        android:background="@drawable/splash_gradient_bg"
+        android:layout_width="match_parent"
+        design:titleTextColor="@color/colorPrimary"
+        app:title=" "
+        android:layout_height="60dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" >
+        <TextView
+            android:id="@+id/toolbar_title_product_de14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محلاتكوم"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:elevation="10dp"
+            android:id="@+id/tabs"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="منتجات بصور" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قائمة منتجات" />
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</RelativeLayout>

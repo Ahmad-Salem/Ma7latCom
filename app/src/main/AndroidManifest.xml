@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmad_elbayadi.ma7laty">
+
+    <application
+        android:networkSecurityConfig="@xml/security_check"
+
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".test">
+
+        </activity>
+        <activity android:name=".activities.Client_Service" />
+        <activity android:name=".activities.product_details_list" />
+        <activity android:name=".splash_screen.splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".startup_screen.startupscreens" />
+        <activity android:name=".activities.Login_activity" />
+        <activity
+            android:name=".activities.newUserResgister"
+            android:parentActivityName=".activities.Login_activity" />
+        <activity android:name=".user_general_setting.general_setting" />
+        <activity
+            android:name=".activities.List_of_shops_activity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Shop_details"
+            android:parentActivityName=".activities.List_of_shops_activity" />
+        <activity
+            android:name=".activities.List_Of_Products"
+            android:parentActivityName=".activities.Shop_details" />
+        <activity
+            android:name=".activities.Product_details"
+            android:parentActivityName=".activities.List_Of_Products" />
+        <activity
+            android:name=".activities.List_Of_Offers"
+            android:parentActivityName=".activities.Shop_details" />
+        <activity android:name=".activities.Shop_Direction" />
+        <activity
+            android:name=".activities.Offer_Details"
+            android:parentActivityName=".activities.List_Of_Offers" />
+        <activity android:name=".activities.activation_activity" />
+        <activity android:name=".activities.MainActivity_private" />
+        <activity
+            android:name=".activities.Shop_details_own"
+            android:parentActivityName=".activities.MainActivity_private" />
+        <activity
+            android:name=".activities.offer_details_own"
+            android:parentActivityName=".activities.List_Of_offers_own" />
+        <activity android:name=".activities.Shop_Direction_own" />
+        <activity
+            android:name=".activities.Add_shop_own"
+            android:parentActivityName=".activities.MainActivity_private" />
+        <activity
+            android:name=".activities.Add_offer_own"
+            android:parentActivityName=".activities.List_Of_offers_own" />
+        <activity
+            android:name=".activities.Add_product_own"
+            android:parentActivityName=".activities.List_Of_Product_own" />
+        <activity
+            android:name=".activities.User_profile"
+            android:parentActivityName=".activities.MainActivity_private" />
+        <activity
+            android:name=".activities.List_Of_offers_own"
+            android:parentActivityName=".activities.Shop_details_own" />
+        <activity
+            android:name=".activities.List_Of_Product_own"
+            android:parentActivityName=".activities.Shop_details_own" />
+        <activity
+            android:name=".activities.Product_details_own"
+            android:parentActivityName=".activities.List_Of_Product_own" />
+        <activity
+            android:name=".activities.Edit_shop_info"
+            android:parentActivityName=".activities.Shop_details_own" />
+        <activity
+            android:name=".activities.Edit_shop_photo"
+            android:parentActivityName=".activities.Shop_details_own" />
+        <activity
+            android:name=".activities.Edit_offer_info"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_offer_photo"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_product_info"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_product_photo"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_product_rest_photo"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_profile_info"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Edit_profile_photo"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Forgot_Password"
+            android:parentActivityName=".activities.Login_activity" />
+        <activity android:name=".activities.guide_screen" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".activities.more_shop_info" />
+        <activity
+            android:name=".activities.All_Offers_Main_List"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

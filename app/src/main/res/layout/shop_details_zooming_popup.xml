@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/pop_up_dis_shop"
+    android:textDirection="rtl"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+<!--    android:background="@drawable/transparent_dark"-->
+<!--    <TextView-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="x"-->
+<!--        android:id="@+id/close_btn_shop"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="@drawable/circle_close_backgraound"/>-->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/close_btn_shop2"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_action_back"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="shop name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name_shop"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name_shop"
+        android:layout_marginTop="20dp">
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/shop_details_image_zooming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:src="@drawable/photo_startup1" />
+    </RelativeLayout>
+</RelativeLayout>

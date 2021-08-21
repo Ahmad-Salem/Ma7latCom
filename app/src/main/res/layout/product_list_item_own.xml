@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/slider_shadow"
+    android:id="@+id/product_item_container22">
+
+    <ImageView
+        android:id="@+id/product_list_photo22"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/test_offer"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_list_title122"
+            android:text="أسم المنتج"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_list_description22"
+            android:layout_below="@+id/product_list_title122"
+            android:text="أسم المنتج"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_list_price22"
+            android:text="أسم المنتج"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="5sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_list_price_coin_own"
+            android:text="جنيه"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="5sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_user_account_loggedin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/person_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:layout_below="@+id/photo_container"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="أسم المستخدم"
+            android:id="@+id/nav_user_name"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/person_image"/>
+
+        <TextView
+            android:id="@+id/nav_email"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="example.ma7alty@ma7alty.com"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/nav_user_name"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

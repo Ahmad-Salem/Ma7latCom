@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="340dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/pop_up_dis_shop"
+    android:textDirection="rtl"
+    android:layout_height="450dp"
+    android:background="@drawable/transparent_dark"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="x"
+        android:id="@+id/close_btn_shop"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_close_backgraound"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_v"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photo_logo_design" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pop_shop_title"
+                android:text="الصلاحيات الخاصة بالمحل"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pop_shop_title"
+                android:id="@+id/action_edit_shop_btn"
+                android:text="تعديل بيانات المحل"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_btn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/action_edit_shop_btn"
+                android:id="@+id/action_edit_shop_btn_photo"
+                android:text="تعديل صورة المحل"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_btn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/action_delete_shop_btn"
+                android:text="حذف المحل"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/action_edit_shop_btn_photo"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_btn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/action_exit_shop_btn"
+                android:text="إنهاء"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/action_delete_shop_btn"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:background="@drawable/rounded_btn"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

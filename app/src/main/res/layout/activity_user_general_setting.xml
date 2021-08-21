@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:background="@drawable/pattern_of_icon"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.user_general_setting.general_setting">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_activity_toolbar"
+        android:background="@drawable/splash_gradient_bg"
+        design:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" >
+        <TextView
+            android:id="@+id/toolbar_title_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات المستخدم"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_container"
+
+        android:layout_below="@+id/setting_activity_toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات تحديد الاعلانات والعروض"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/title_setting_tv1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:visibility="visible"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:id="@+id/gov_spine_setting"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/title_setting_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:paddingRight="50dp"
+            android:layout_marginTop="16dp"
+            style="@style/SpinnerTheme_government" />
+
+
+        <Spinner
+            android:visibility="visible"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:id="@+id/city_spine_setting"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/gov_spine_setting"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:paddingRight="50dp"
+            android:layout_marginTop="16dp"
+            style="@style/SpinnerTheme_government" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="القائمة الرئيسية"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_login_btn"
+            android:textColor="@color/white"
+            android:id="@+id/main_menu_btn"
+            android:layout_below="@+id/city_spine_setting"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loading_container"
+        android:background="@color/white">
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/rotateloading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:loading_color="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

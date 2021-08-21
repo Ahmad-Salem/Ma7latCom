@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pattern_of_icon"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.MainActivity">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_internet_connection_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/internet_connection"
+            android:id="@+id/connection_photo"
+            />
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لايوجد إتصال بالأنترنت"
+            android:id="@+id/connection_text_main"
+            android:layout_below="@+id/connection_photo"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حاول مرة أخري"
+            android:layout_marginTop="20dp"
+            android:id="@+id/retry_main"
+            android:layout_below="@+id/connection_text_main"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_list_of_shop_data_null"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:id="@+id/main_data_photo_list_of_shop"
+            />
+        <TextView
+            android:layout_below="@+id/main_data_photo_list_of_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قريبا محلات كوم سوف يصل الي هذه المحافظة"
+            android:id="@+id/main_data_text_list_of_shop"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/fab_discover"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:src="@drawable/ic_search_black_24dp"-->
+<!--        android:layout_margin="16dp" />-->
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:id="@+id/scroll_main_activity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/discover_shops">
+
+                <Spinner
+                    android:textDirection="rtl"
+                    android:layoutDirection="rtl"
+                    android:id="@+id/use_type_spine"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:paddingRight="50dp"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    style="@style/SpinnerTheme" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shop_discover"
+                    android:text="أستكشف المحلات"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:padding="@dimen/btn_padding"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:background="@drawable/rounded_btn"/>
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_shop"
+                    android:text="أضف محلك"
+                    android:layout_toLeftOf="@+id/shop_discover"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/btn_padding"
+                    android:textSize="@dimen/btn_txt_size"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_btn"
+                    />
+
+            </RelativeLayout>
+
+            <!-- start advertisement slider -->
+            <RelativeLayout
+                android:id="@+id/advertisment_display"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/discover_shops"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم الأعلانات داخل محافظتك"
+                    android:id="@+id/advertisement_slider_title"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/advertisement_slider_title"
+                    android:id="@+id/sliderviewpage_advertisement"
+                    android:background="@drawable/slider_shadow">
+
+                </androidx.viewpager.widget.ViewPager>
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/dotslayout_advertisement"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_marginBottom="5dp">-->
+
+
+                <!--</LinearLayout>-->
+
+            </RelativeLayout>
+            <!-- end advertisement slider -->
+
+
+            <!-- start offers slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/advertisment_display"
+                android:id="@+id/offer_display"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:text="مشاهدة كل العروض"
+                    android:id="@+id/offer_slider_title"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم عروض المحلات داخل مدينتك"
+                    android:id="@+id/offer_slider_title2"
+                    android:layout_below="@+id/offer_slider_title"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/sliderviewpage_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:layout_below="@+id/offer_slider_title2"
+                    android:layout_marginTop="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/dotslayout_offers"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:layout_marginBottom="5dp">-->
+
+
+                <!--</LinearLayout>-->
+
+            </RelativeLayout>
+            <!-- end advertisement slider -->
+
+
+            <!-- start all shop slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offer_display"
+                android:id="@+id/offer_display2"
+                android:layout_height="330dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:text="مشاهدة كل المحلات"
+                    android:id="@+id/All_Shop_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم  المحلات داخل مدينتك"
+                    android:id="@+id/All_Shop_offer_slider_title222"
+                    android:layout_below="@+id/All_Shop_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/sliderviewpage_offers_all_shop"
+                    android:layout_below="@+id/All_Shop_offer_slider_title222">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- end all shop slider -->
+
+
+            <!-- start resturant slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offer_display2"
+                android:id="@+id/offer_display2r"
+                android:layout_height="330dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:text="مشاهدة كل المطاعم"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/resturant_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم المطاعم داخل مدينتك"
+                    android:id="@+id/resturant_offer_slider_title222"
+                    android:layout_below="@+id/resturant_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/resturant_sliderviewpage_offers2"
+                android:layout_below="@+id/resturant_offer_slider_title222">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- end resturant slider -->
+
+            <!-- start electronics slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offer_display2r"
+                android:id="@+id/offer_display2e"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="مشاهدة كل محلات الالكترونيات"
+                    android:id="@+id/electronics_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم محلات الألكترونيات داخل مدينتك"
+                    android:id="@+id/electronics_offer_slider_title222"
+                    android:layout_below="@+id/electronics_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/electronics_sliderviewpage_offers2"
+                android:layout_below="@+id/electronics_offer_slider_title222">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- end electronics slider -->
+
+            <!-- start carpet slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offer_display2e"
+                android:id="@+id/offer_display2c"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="مشاهدة محلات المفروشات والسجاد"
+                    android:id="@+id/carpet_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم محلات المفروشات والسجاد داخل مدينتك"
+                    android:id="@+id/carpet_offer_slider_title222"
+                    android:layout_below="@+id/carpet_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/carpet_sliderviewpage_offers2"
+                android:layout_below="@+id/carpet_offer_slider_title222">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- end carpet slider -->
+
+            <!-- start clothes slider -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offer_display2c"
+                android:id="@+id/offer_display2cl"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="23dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="مشاهدة كل محلات الملابس"
+                    android:id="@+id/clothes_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:paddingTop="2dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="أهم محلات الملابس داخل مدينتك"
+                    android:id="@+id/clothes_offer_slider_title222"
+                    android:layout_below="@+id/clothes_offer_slider_title22"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/clothes_sliderviewpage_offers2"
+                android:layout_below="@+id/clothes_offer_slider_title222">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+            <!-- end clothes slider -->
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

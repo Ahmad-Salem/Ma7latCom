@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@drawable/pattern_of_icon"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.more_shop_info">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/offer_details_activity_toolbar1_more"
+        android:background="@drawable/splash_gradient_bg"
+        android:layout_width="match_parent"
+        design:titleTextColor="@color/colorPrimary"
+        app:title=" "
+        android:layout_height="60dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" >
+        <TextView
+            android:id="@+id/toolbar_title_more_user_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مزيد من التفاصيل"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/more_info_internet_connection_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/internet_connection"
+            android:id="@+id/more_info_connection_photo"
+            />
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لايوجد إتصال بالأنترنت"
+            android:id="@+id/more_info_connection_text_main_private"
+            android:layout_below="@+id/more_info_connection_photo"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حاول مرة أخري"
+            android:layout_marginTop="20dp"
+            android:id="@+id/more_info_retry_main_private"
+            android:layout_below="@+id/more_info_connection_text_main_private"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/more_info_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/offer_details_activity_toolbar1_more">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_details_container2_more"
+            android:layout_below="@+id/shop_details_container_more"
+            android:background="@drawable/shop_details_container"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/person_image_normal_info_more"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_person"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shop_image_container2_more"
+                android:layout_below="@+id/person_image_normal_info_more">
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_image_container2_more"
+                android:id="@+id/textviews_container2_more">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم صاحب العرض: "
+                    android:id="@+id/offer_owner_name_details_pro2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم العرض "
+                    android:layout_toLeftOf="@+id/offer_owner_name_details_pro2_more"
+                    android:id="@+id/offer_name_details2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="البريد الألكتروني: "
+                    android:id="@+id/offer_owner_email_details_pro2_more"
+                    android:layout_below="@+id/offer_name_details2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم العرض "
+                    android:layout_toLeftOf="@+id/offer_owner_email_details_pro2_more"
+                    android:id="@+id/offer_country_details2_more"
+                    android:layout_below="@+id/offer_name_details2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان: "
+                    android:id="@+id/offer_owner_address_details_pro2_more"
+                    android:layout_below="@+id/offer_owner_email_details_pro2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم العرض "
+                    android:layout_toLeftOf="@+id/offer_owner_email_details_pro2_more"
+                    android:id="@+id/offer_owner_address_details_more"
+                    android:layout_below="@+id/offer_owner_email_details_pro2_more"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/offer_owner_address_details_pro2_more"
+                    android:id="@+id/phone1_container2_info">
+
+
+                    <Button
+                        android:background="@drawable/customer_services_button_layout"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/dial_number1_info"
+                        android:layout_width="220dp"
+                        android:layout_marginRight="-2dp"
+                        android:layout_height="20dp"
+                        android:hint="000-000-000"
+                        android:inputType="numberDecimal"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:layout_below="@id/phone1_container2_info"
+                    android:id="@+id/phone1_container22_info">
+
+                    <Button
+                        android:background="@drawable/customer_services_button_layout"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/dial_number2_info"
+                        android:layout_width="220dp"
+                        android:layout_marginRight="-2dp"
+                        android:layout_height="20dp"
+                        android:hint="000-000-000"
+                        android:inputType="numberDecimal"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

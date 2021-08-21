@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@drawable/pattern_of_icon"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ahmad_elbayadi.ma7laty.activities.Shop_details_own">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/shop_details_activity_toolbar122"
+        android:background="@drawable/splash_gradient_bg"
+        android:layout_width="match_parent"
+        design:titleTextColor="@color/colorPrimary"
+        app:title=" "
+        android:layout_height="60dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl" >
+        <TextView
+            android:id="@+id/toolbar_title_shop_list_de22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محلاتكوم"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/shop_details_activity_toolbar122">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop_details_container22"
+            android:background="@drawable/shop_details_container"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shop_details_imageviewbg"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/shop_image_container22">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/photo_startup1"
+                    android:id="@+id/shop_photo_details22"
+                    android:layout_margin="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/shop_image_container22"
+                android:id="@+id/textviews_container22">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل: "
+                    android:id="@+id/shop_name_details_pro22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل "
+                    android:layout_toLeftOf="@+id/shop_name_details_pro22"
+                    android:id="@+id/shop_name_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الدولة: "
+                    android:id="@+id/shop_country_details_pro22"
+                    android:layout_below="@+id/shop_name_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل "
+                    android:layout_toLeftOf="@+id/shop_country_details_pro22"
+                    android:id="@+id/shop_country_details22"
+                    android:layout_below="@+id/shop_name_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نشاط المحل: "
+                    android:id="@+id/shop_activity_details_pro22"
+                    android:layout_below="@+id/shop_country_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل "
+                    android:id="@+id/shop_activity_details22"
+                    android:layout_toLeftOf="@+id/shop_activity_details_pro22"
+                    android:layout_below="@+id/shop_country_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="عنوان المحل: "
+                    android:id="@+id/shop_address_details_pro22"
+                    android:layout_below="@+id/shop_activity_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل "
+                    android:layout_toLeftOf="@+id/shop_address_details_pro22"
+                    android:id="@+id/shop_address_details22"
+                    android:layout_below="@+id/shop_activity_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="وصف المحل: "
+                    android:id="@+id/shop_desc_details_pro22"
+                    android:layout_below="@+id/shop_address_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحل "
+                    android:layout_toLeftOf="@+id/shop_desc_details_pro22"
+                    android:id="@+id/shop_desc_details22"
+                    android:layout_below="@+id/shop_address_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="8sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="مشاهدة عروض المحل"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/shop_action_offers_details22"
+                    android:layout_below="@+id/shop_desc_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_btn"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="مشاهدة منتجات المحل"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/shop_action_produts_details22"
+                    android:layout_below="@+id/shop_action_offers_details22"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="30dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_btn"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/textviews_container22"
+                android:id="@+id/Button_shop_details_container22">
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:text="Direction"
+                    android:id="@+id/direction_details22"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/rounded_btn"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_shop_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

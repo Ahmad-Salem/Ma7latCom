@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/slider_shadow"
+    android:id="@+id/offer_item_container_all">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/offer_list_photo_all"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/test_offer"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_offer"
+            android:scaleType="fitXY"
+            android:layout_marginRight="-2dp"
+            android:layout_marginTop="-40dp"
+            android:id="@+id/paid_offer_list"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offer_list_title_all"
+            android:text="أسم العرض"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/offer_list_description_all"
+            android:layout_below="@+id/offer_list_title_all"
+            android:text="أسم العرض"
+            android:layout_marginTop="5dp"
+            android:textSize="8sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

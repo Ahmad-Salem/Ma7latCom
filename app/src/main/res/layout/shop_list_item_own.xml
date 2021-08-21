@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginTop="5dp"
+    android:padding="2dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@drawable/slider_shadow"
+    android:id="@+id/shop_container1">
+
+    <ImageView
+        android:id="@+id/shop_photo1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/photo_startup1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/shop_info1">
+            <TextView
+                android:id="@+id/shop_name12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم المحل"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shop_activity1"
+                android:layout_below="@+id/shop_name12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نشاط المحل"
+                android:textSize="8sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/shop_country1"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/shop_name12"
+                android:layout_toLeftOf="@+id/shop_activity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="نشاط المحل"
+                android:textSize="8sp"/>
+            <TextView
+                android:id="@+id/shop_government1"
+                android:layout_toLeftOf="@+id/shop_country1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نشاط المحل"
+                android:layout_below="@+id/shop_name12"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:textSize="8sp"/>
+            <TextView
+                android:id="@+id/shop_city1"
+                android:layout_toLeftOf="@+id/shop_government1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نشاط المحل"
+                android:textSize="8sp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/shop_name12"
+                android:layout_marginTop="2dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_info1"
+            android:layout_marginTop="2dp"
+            android:id="@+id/shop_action1"
+            android:layout_marginRight="30dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/shop_action_1"
+                android:id="@+id/products_icon1" />
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/shop_action2"
+                android:id="@+id/offers_icon1"
+                android:layout_toLeftOf="@+id/products_icon1"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/shop_action3"
+                android:layout_toLeftOf="@+id/offers_icon1"
+                android:id="@+id/direction1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

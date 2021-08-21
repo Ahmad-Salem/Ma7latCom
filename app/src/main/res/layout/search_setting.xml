@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="340dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/pop_up_dis_shop"
+    android:textDirection="rtl"
+    android:layout_height="450dp"
+    android:background="@drawable/transparent_dark"
+    android:padding="10dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="x"
+        android:id="@+id/close_btn"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle_close_backgraound"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_v"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/photo_logo_design" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إستكشف المحلات"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/popup_title"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Spinner
+                android:textDirection="rtl"
+                android:layoutDirection="rtl"
+                android:id="@+id/government_spine_pop_up"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="80dp"
+                style="@style/SpinnerTheme" />
+            <Spinner
+                android:visibility="gone"
+                android:textDirection="rtl"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/government_spine_pop_up"
+                android:id="@+id/city_spine"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="80dp"
+                style="@style/SpinnerTheme" />
+
+            <Spinner
+                android:visibility="gone"
+                android:textDirection="rtl"
+                android:layoutDirection="rtl"
+                android:layout_below="@+id/city_spine"
+                android:id="@+id/shop_activity_spine"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="80dp"
+                style="@style/SpinnerTheme" />
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dis_shop_action"
+                android:text="أستكشف محلك"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/shop_activity_spine"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_btn"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العودة لأختيار المحافظة"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:background="@drawable/back_btn_rounded"
+                android:id="@+id/back_government"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العودة لأختيار المدينة"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@drawable/back_btn_rounded"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/back_city"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
